@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
 public class Main
 {
     public static void main(String[] args) throws IOException
-    {
+    { // To run this you must increase the stack size in VM options '-Xss515m'
         for(NmapSystem system: processFile("NmapNew.txt"))
         {
             System.out.print(system.toCSV());
